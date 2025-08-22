@@ -29,6 +29,7 @@ contact: >
 # Pages shown in navbar
 nav_pages:
   - name: about
+  - name: posts
 
 include:
   - .htaccess
@@ -52,6 +53,14 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
   parse_block_html: true # default for kramdown is false. This will enable using Markdown links
+
+defaults:
+- scope:
+    path: ""
+    type: posts
+  values:
+    layout: post
+    permalink: /posts/:title/
 
 plugins: ["jekyll/scholar"]
 
