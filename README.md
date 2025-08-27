@@ -1,4 +1,5 @@
 ![coverage](https://github.com/mgoldberg10/mgoldberg10.github.io/actions/workflows/github-pages.yml/badge.svg)                                                        
+![CI](https://img.shields.io/github/checks-status/mgoldberg10/mgoldberg10.github.io/main)
 
 # mgoldberg10.github.io
 
