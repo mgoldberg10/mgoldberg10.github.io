@@ -1,41 +1,32 @@
 ---
-title: "Research"
+title: "Publications"
 layout: gridlay
 sitemap: false
 permalink: /research/
+years: [2016, 2017, 2018, 2019, 2020, 2021]
 ---
 
 <style>
-img{
-  border-radius: 10px;
-}
-.col-md-3 {
-  margin-top:10px;
-  margin-bottom:10px;
-  padding:0px;
-  display:block;
-  overflow:hidden;
-  text-align:center;
-  display: table-cell;
-  background: white;
-  border-radius: 20px;
-  height: auto;
-}
-iframe {
-  margin:0;
-  padding:0;
-  width: 175px;
-  display: inline;
-  vertical-align: middle;
+.jumbotron{
+    padding:3%;
+    padding-bottom:10px;
+    padding-top:10px;
+    margin-top:10px;
+    margin-bottom:30px;
 }
 </style>
 
-## Research
+<div class="jumbotron">
+### Preprints
+{% bibliography --query @unpublished %}
+</div>
 
 <div class="jumbotron">
-<div class="col-md-12 col-sm-12">
-<h4>Example Research</h4>
-
-Example description
+### Presentations
+{% bibliography --query @conference %}
 </div>
+
+<div class="jumbotron">
+### Other
+- [Lab Sea MITgcm Assimilation Tutorial](https://ecco-hackweek.github.io/ecco-2024/tutorials/mitgcm_assim/labsea_assim_tutorial.html), ECCO Hackweek 2024
 </div>

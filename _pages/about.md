@@ -57,9 +57,9 @@ permalink: /about/
     {% for award in site.data.awards %}
       <li>
         {% if award.url %}
-          <a href="{{ award.url }}">{{ award.name | replace: "-" , "–" }}</a>
+          {{ award.emoji }} <a href="{{ award.url }}">{{ award.name | replace: "-" , "–" }}</a>
         {% else %}
-          {{ award.name | replace: "-" , "–" }}
+          {{ award.emoji }} {{ award.name | replace: "-" , "–" }}
         {% endif %}
       </li>
     {% endfor %}
